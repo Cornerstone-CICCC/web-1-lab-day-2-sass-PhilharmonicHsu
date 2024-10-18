@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: cursive;
+}
+
+header {
+  background-color: #ffff00;
+  font-size: 1.4rem;
+}
+header .logo {
+  margin-left: 0.5rem;
+}
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  margin: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+header nav ul li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+main {
+  margin: 0.5rem;
+}
+main h1 {
+  font-size: 3rem;
+}
+main h2 {
+  background-color: #02fffe;
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+}
+main section .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main section .gallery img {
+  width: 100%;
+}
+main .fruit-hover figure {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  margin: 0;
+}
+main .fruit-hover figure img {
+  width: 100%;
+}
+main .fruit-hover figure img + figcaption {
+  position: absolute;
+  display: none;
+}
+main .fruit-hover figure img:hover + figcaption {
+  position: absolute;
+  display: block;
+  background-color: #fe0103;
+  color: white;
+}
+main .back-to-top-btn {
+  position: fixed;
+  background-color: #000000;
+  right: 0;
+  bottom: 0;
+  padding: 0 1rem;
+}
+main .back-to-top-btn a:link {
+  color: white;
+}
+main .back-to-top-btn a:visited {
+  color: white;
+}
+
+footer {
+  margin: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
